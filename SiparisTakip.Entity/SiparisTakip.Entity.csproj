@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BED8DF35-C4C8-4F87-B123-EA859243816D}</ProjectGuid>
+    <ProjectGuid>{D6332754-D570-47B7-A4E7-6A2063E25803}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SiparisTakip.Entity</RootNamespace>
@@ -31,8 +31,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,7 +50,68 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelViews\Model1.cs" />
+    <Compile Include="ModelViews\vw_BankaHesap.cs" />
+    <Compile Include="ModelViews\vw_BankaHesapHareket.cs" />
+    <Compile Include="ModelViews\vw_CariBakiye.cs" />
+    <Compile Include="ModelViews\vw_CariHareket.cs" />
+    <Compile Include="ModelViews\vw_Fatura.cs" />
+    <Compile Include="ModelViews\vw_FaturaDetay.cs" />
+    <Compile Include="ModelViews\vw_Kullanici.cs" />
+    <Compile Include="ModelViews\vw_SatisDetayListesi.cs" />
+    <Compile Include="ModelViews\vw_SatisListesi.cs" />
+    <Compile Include="ModelViews\vw_StokDetayliHesapEkstresi.cs" />
+    <Compile Include="ModelViews\vw_StokHareketListesi.cs" />
+    <Compile Include="ModelViews\vw_StokListesi.cs" />
+    <Compile Include="ModelViews\vw_StokSayim.cs" />
+    <Compile Include="ModelViews\vw_StokVaryantListesi.cs" />
+    <Compile Include="ModelViews\vw_TeknikServis.cs" />
+    <Compile Include="Model\Aksesuar.cs" />
+    <Compile Include="Model\Appointments.cs" />
+    <Compile Include="Model\Ayarlar.cs" />
+    <Compile Include="Model\BankaHesap.cs" />
+    <Compile Include="Model\BankaHesapHareket.cs" />
+    <Compile Include="Model\Cari.cs" />
+    <Compile Include="Model\CariHareket.cs" />
+    <Compile Include="Model\CariStokFiyat.cs" />
+    <Compile Include="Model\Fatura.cs" />
+    <Compile Include="Model\FaturaDetay.cs" />
+    <Compile Include="Model\Il.cs" />
+    <Compile Include="Model\Ilce.cs" />
+    <Compile Include="Model\Isyeri.cs" />
+    <Compile Include="Model\Kasa.cs" />
+    <Compile Include="Model\Kullanici.cs" />
+    <Compile Include="Model\KullaniciYetki.cs" />
+    <Compile Include="Model\Maas.cs" />
+    <Compile Include="Model\MaasHareket.cs" />
+    <Compile Include="Model\Marka.cs" />
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="Model\Personel.cs" />
+    <Compile Include="Model\Resources.cs" />
+    <Compile Include="Model\RutHareketPlani.cs" />
+    <Compile Include="Model\Sabit.cs" />
+    <Compile Include="Model\Satis.cs" />
+    <Compile Include="Model\SatisDetay.cs" />
+    <Compile Include="Model\Sektor.cs" />
+    <Compile Include="Model\Stok.cs" />
+    <Compile Include="Model\StokDepo.cs" />
+    <Compile Include="Model\StokETicaret.cs" />
+    <Compile Include="Model\StokHareket.cs" />
+    <Compile Include="Model\StokResim.cs" />
+    <Compile Include="Model\StokSayim.cs" />
+    <Compile Include="Model\StokSayimDetay.cs" />
+    <Compile Include="Model\StokVaryant.cs" />
+    <Compile Include="Model\sysdiagrams.cs" />
+    <Compile Include="Model\Tanim.cs" />
+    <Compile Include="Model\TanimGrup.cs" />
+    <Compile Include="Model\TeknikServis.cs" />
+    <Compile Include="Model\Ulke.cs" />
+    <Compile Include="Model\Yetki.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

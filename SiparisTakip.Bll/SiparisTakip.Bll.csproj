@@ -41,7 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GenericManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StokManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiparisTakip.Dal\SiparisTakip.Dal.csproj">
+      <Project>{F5DADE9D-D508-4040-A3A0-11BAF8412C24}</Project>
+      <Name>SiparisTakip.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiparisTakip.Entity\SiparisTakip.Entity.csproj">
+      <Project>{D6332754-D570-47B7-A4E7-6A2063E25803}</Project>
+      <Name>SiparisTakip.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiparisTakip.Interfaces\SiparisTakip.Interfaces.csproj">
+      <Project>{F9361423-56E7-478B-9F20-A21247C0012C}</Project>
+      <Name>SiparisTakip.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

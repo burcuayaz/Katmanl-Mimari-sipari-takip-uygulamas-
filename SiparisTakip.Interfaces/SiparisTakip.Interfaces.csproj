@@ -41,7 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IGenericService.cs" />
+    <Compile Include="IStokService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiparisTakip.Entity\SiparisTakip.Entity.csproj">
+      <Project>{D6332754-D570-47B7-A4E7-6A2063E25803}</Project>
+      <Name>SiparisTakip.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
