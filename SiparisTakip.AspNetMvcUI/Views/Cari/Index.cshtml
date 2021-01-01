@@ -1,0 +1,50 @@
+﻿@model List<SiparisTakip.Entity.Models.Cari>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           CariAdi
+        </th>
+        <th>
+            YetkiliAdi
+        </th>
+        <th>
+           YetkiliSoyadi
+        </th>
+        <th>
+           Telefon
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CariAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YetkiliAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YetkiliSoyadi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefon)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SiparisTakip.Dal.Abstract
 {
-    public interface IGenericRepository<T> where T: class
+    public interface IGenericRepository<T>:IDisposable where T: class
     {
         T Add(T entity);
         T Get(int id);

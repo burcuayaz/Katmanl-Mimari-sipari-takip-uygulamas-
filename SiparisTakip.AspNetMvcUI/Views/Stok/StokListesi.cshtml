@@ -1,0 +1,62 @@
+﻿@model List<SiparisTakip.Entity.Models.Stok>
+
+@{
+    ViewBag.Title = "StokListesi";
+}
+
+<h2>StokListesi</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+          BarkodNo
+        </th>
+        <th>
+          StokKodu
+        </th>
+        <th>
+          StokAdi
+        </th>
+        <th>
+         AlisFiyati
+        </th>
+        <th>
+         KdvOrani
+        </th>
+        <th>
+         SatisFiyati
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BarkodNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StokKodu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StokAdi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlisFiyati)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.KdvOrani)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SatisFiyati)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+</table>

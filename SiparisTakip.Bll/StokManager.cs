@@ -1,5 +1,5 @@
 ﻿using SiparisTakip.Dal.Abstract;
-using SiparisTakip.Entity.Model;
+using SiparisTakip.Entity.Models;
 using SiparisTakip.Interfaces;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-﻿using SiparisTakip.Entity.Model;
+﻿using SiparisTakip.Entity.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

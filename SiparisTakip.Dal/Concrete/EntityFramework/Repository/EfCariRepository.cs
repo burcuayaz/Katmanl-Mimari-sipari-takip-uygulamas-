@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace SiparisTakip.Dal.Concrete.EntityFramework.Repository
 {
-    public class EfStokRepository : EfGenericRepository<Stok>, IStokRepository
+    public class EfCariRepository : EfGenericRepository<Cari>, ICariRepository
     {
-        public EfStokRepository()// constructure metod
+        public EfCariRepository()// constructure metod
         {
             context = new SiparisTakipContext();
         }
-        public List<Stok> StokListele(int stokGrubuId)
+        public List<Cari> CariHesapEkstresi(int cariId)
         {
-            return context.Stok.Where(x => x.StokGrubuID == stokGrubuId).ToList();
+            return context.Cari.Where(x => x.CariID == cariId).ToList();
         }
     }
 }

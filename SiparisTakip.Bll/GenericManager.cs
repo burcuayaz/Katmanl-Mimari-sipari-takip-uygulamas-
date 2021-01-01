@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SiparisTakip.Bll
 {
-    public abstract class GenericManager<T> : IGenericService<T> where T:class
+    public abstract class GenericManager<T> : IGenericService<T> where T : class
     {
         private readonly IGenericRepository<T> genericRepository;
 
@@ -26,9 +26,17 @@ namespace SiparisTakip.Bll
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Dispose(true);
+             GC.SuppressFinalize(this);
         }
-
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                genericRepository.Dispose();
+            }
+        }
+              
         public T Get(int id)
         {
             return genericRepository.Get(id);
@@ -36,27 +44,27 @@ namespace SiparisTakip.Bll
 
         public List<T> GetAll()
         {
-            throw new NotImplementedException();
+            return genericRepository.GetAll();
         }
 
         public List<T> GetAll(Expression<Func<T, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return genericRepository.GetAll(predicate);
         }
 
         public bool Remove(int id)
         {
-            throw new NotImplementedException();
+            return genericRepository.Remove(id);
         }
 
-        public bool Remove(T entity)
+        public bool Remove(T entity)//Nesne olarak silme
         {
-            throw new NotImplementedException();
+            return genericRepository.Remove(entity);
         }
 
         public T Update(T entity)
         {
-            throw new NotImplementedException();
+            return genericRepository.Update(entity);
         }
       //  public abstract void Topla();
     }
