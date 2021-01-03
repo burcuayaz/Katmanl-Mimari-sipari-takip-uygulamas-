@@ -9,9 +9,15 @@ using System.Threading.Tasks;
 
 namespace SiparisTakip.Dal.Concrete.EntityFramework.Repository
 {
-    public abstract class EfGenericRepository<T> : IGenericRepository<T> where T: class
+    public class EfGenericRepository<T> : IGenericRepository<T> where T: class
     {
         public SiparisTakipContext context;
+        public EfGenericRepository()
+        {
+            context = new SiparisTakipContext();
+        }
+
+
         public T Add(T entity)
         {
             context.Set<T>().Add(entity);

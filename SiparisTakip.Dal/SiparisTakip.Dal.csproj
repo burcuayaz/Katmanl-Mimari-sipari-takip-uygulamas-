@@ -53,10 +53,12 @@
   <ItemGroup>
     <Compile Include="Abstract\ICariRepository.cs" />
     <Compile Include="Abstract\IGenericRepository.cs" />
+    <Compile Include="Abstract\IKullaniciRepository.cs" />
     <Compile Include="Abstract\IStokRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Context\SiparisTakipContext.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfCariRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfGenericRepository.cs" />
+    <Compile Include="Concrete\EntityFramework\Repository\EfKullaniciRepository.cs" />
     <Compile Include="Concrete\EntityFramework\Repository\EfStokRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

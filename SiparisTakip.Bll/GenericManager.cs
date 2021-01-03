@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SiparisTakip.Bll
 {
-    public abstract class GenericManager<T> : IGenericService<T> where T : class
+    public class GenericManager<T> : IGenericService<T> where T : class
     {
         private readonly IGenericRepository<T> genericRepository;
 

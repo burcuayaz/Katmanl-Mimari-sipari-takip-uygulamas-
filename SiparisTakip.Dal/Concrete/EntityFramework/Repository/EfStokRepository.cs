@@ -11,9 +11,9 @@ namespace SiparisTakip.Dal.Concrete.EntityFramework.Repository
 {
     public class EfStokRepository : EfGenericRepository<Stok>, IStokRepository
     {
-        public EfStokRepository()// constructure metod
+        public EfStokRepository(): base() // constructure metod
         {
-            context = new SiparisTakipContext();
+           
         }
         public List<Stok> StokListele(int stokGrubuId)
         {
