@@ -1,0 +1,50 @@
+﻿@model IEnumerable<SiparisTakip.Entity.Models.Kullanici>
+
+<p>
+    @Html.ActionLink("Yeni Kayıt", "Kaydet")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Kullanıcı Adı
+        </th>
+        <th>
+            Kullanıcı Soyadı
+        </th>
+        <th>
+            E-Mail Adresi
+        </th>
+        <th>
+            Cep Tel No
+        </th>
+        <th>
+            Kayıt Zamanı
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.KullaniciAdi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.KullaniciSoyadi)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.EMail)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.CepTelNo)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.KayitZamani)
+    </td>
+    <td>
+        @Html.ActionLink("Düzenle", "Duzenle", new { id=item.KullaniciID }) |
+        @Html.ActionLink("Detay", "Detay", new {  id=item.KullaniciID }) |
+        @Html.ActionLink("Sil", "Sil", new {  id=item.KullaniciID  })
+    </td>
+</tr>
+}
+
+</table>

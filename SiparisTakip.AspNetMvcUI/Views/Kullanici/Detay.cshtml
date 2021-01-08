@@ -1,0 +1,570 @@
+﻿@model SiparisTakip.Entity.Models.Kullanici
+
+@{
+    ViewBag.Title = "Detay";
+}
+
+<h2>Detay</h2>
+
+<div>
+    <h4>Kullanici</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciAdi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciAdi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciSoyadi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciSoyadi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciKodu)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciKodu)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parola)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parola)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KayitZamani)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KayitZamani)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aktif)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aktif)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YetkiID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YetkiID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sifre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sifre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EnSonGirisZamani)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnSonGirisZamani)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CepTelNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CepTelNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariYeniYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariYeniYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariDuzenleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariDuzenleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariTahsilatYapYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariTahsilatYapYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariOdemeYapYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariOdemeYapYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariAlacaklandirYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariAlacaklandirYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariBorclandirYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariBorclandirYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariIslemDuzenleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariIslemDuzenleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CariIslemSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CariIslemSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokYeniYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokYeniYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokDuzenleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokDuzenleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokGirisYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokGirisYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokCikisYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokCikisYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokDepodanAktarYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokDepodanAktarYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokIslemSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokIslemSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokIslemDuzenleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokIslemDuzenleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokHareketGoruntuleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokHareketGoruntuleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokFiyatHareketiGoruntuleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokFiyatHareketiGoruntuleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokEtiketBasYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokEtiketBasYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokRafEtiketBasYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokRafEtiketBasYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KasaGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KasaGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KasaGirisYapYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KasaGirisYapYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KasaCikisYapYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KasaCikisYapYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KasaIslemDuzeltYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KasaIslemDuzeltYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KasaIslemSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KasaIslemSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaEkleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaEkleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaDuzenleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaDuzenleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaGirisYapYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaGirisYapYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaCikisYapYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaCikisYapYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaIslemDuzenleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaIslemDuzenleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaIslemSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaIslemSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciEkleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciEkleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciDuzenleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciDuzenleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KullaniciSilYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KullaniciSilYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SirketBilgileriGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SirketBilgileriGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AyarlarGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AyarlarGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankaKasayaVirmanYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankaKasayaVirmanYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BankadanBankayaVirmanYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BankadanBankayaVirmanYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokDepodanHizliAktarYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokDepodanHizliAktarYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StokTopluFiyatGuncelleYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StokTopluFiyatGuncelleYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IrsaliyeGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IrsaliyeGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FaturaGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FaturaGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CekSenetGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CekSenetGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TaksitGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TaksitGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonelGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PersonelGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HizliSatisGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HizliSatisGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HizliYeniSatisFaturasiGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HizliYeniSatisFaturasiGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HizliYeniAlisFaturasiGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HizliYeniAlisFaturasiGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RutHareketPlaniYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RutHareketPlaniYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RaporlariGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RaporlariGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TanimamalariGoruntulemeYetki)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TanimamalariGoruntulemeYetki)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TCKimlikNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TCKimlikNo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
